@@ -23,5 +23,12 @@ complete -cf sudo proxychains4
 # Change to 256-color for your terminal applications
 export TERM="xterm-256color"
 
-# Exports
 export VISUAL="vim"
+
+# Gracefully start ssh-agent
+if ! pgrep -u "$USER" ssh-agent > /dev/null; then
+  ssh-agent > ~/.ssh-agent-thing
+fi
+if [[ "$SSH_AGENT_PID" == "" ]]; then
+  eval "$(<~/.ssh-agent-thing)"
+fi
