@@ -3,3 +3,5 @@
 	email = michaeldx2008@gmail.com
 [merge]
 	tool = vimdiff
+[commit]
+	template = /home/mike/.gitmessage.txt

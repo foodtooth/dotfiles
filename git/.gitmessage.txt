@@ -1,0 +1,7 @@
+# Subject line (try to keep under 50 characters)
+
+# Multi-line description of commit,
+# feel free to be detailed (keep each line under 72 characters)
+
+# Provide links to any relevant tickets, articles or other resources
+# Example: Github #23
