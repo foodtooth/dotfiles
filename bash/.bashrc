@@ -2,19 +2,12 @@
 # ~/.bashrc
 #
 
-# If not running interactively, don't do anything
-[[ $- != *i* ]] && return
+[[ -f /etc/bash.bashrc ]] && \
+  . /etc/bash.bashrc
 
 # Modified commands
 alias ls='ls --color=auto'
 alias rm='rm -I'
-
-# Customise PS1
-PS1='[\u@\h \W]\$ '
-
-# Use bash-completion, if available
-[[ $PS1 && -f /usr/share/bash-completion/bash_completion ]] && \
-	. /usr/share/bash-completion/bash_completion
 
 # Manual bash-completion
 complete -c man which
