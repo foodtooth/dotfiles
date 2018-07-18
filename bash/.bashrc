@@ -17,3 +17,5 @@ complete -cf sudo proxychains4
 export TERM='xterm-256color'
 
 export VISUAL='vim'
+
+shopt -s histverify
