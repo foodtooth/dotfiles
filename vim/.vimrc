@@ -20,9 +20,6 @@ Plugin 'nathanaelkane/vim-indent-guides'
 Plugin 'mileszs/ack.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'ctrlpvim/ctrlp.vim'
-Plugin 'heavenshell/vim-jsdoc'
-Plugin 'jelera/vim-javascript-syntax'
-Plugin 'othree/javascript-libraries-syntax.vim'
 Plugin 'w0rp/ale'
 
 " All of your Plugins must be added before the following line
@@ -193,14 +190,6 @@ set cursorline
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Plugin settings
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" ----- YCM related settings ----- "
-let g:ycm_server_log_level = 'debug'
-let g:ycm_python_binary_path = '/usr/bin/python3'
-let g:ycm_server_python_interpreter = '/usr/bin/python2'
-let g:ycm_global_ycm_extra_conf = '/usr/share/vim/vimfiles/third_party/ycmd/cpp/ycm/.ycm_extra_conf.py'
-" let g:ycm_extra_conf_globlist = ['/usr/share/vim/*','!/*']
-let g:ycm_autoclose_preview_window_after_completion = 1
-
 " ----- vim-airline related settings ----- "
 let g:airline_theme='solarized'
 let g:airline_powerline_fonts=1
@@ -208,7 +197,6 @@ let g:airline#extensions#ale#enabled = 1
 
 " Automatically displays all buffers when there's only one tab open
 let g:airline#extensions#tabline#enabled=1
-
 
 " ----- ntpeters/vim-better-whitespace settings ----- "
 " Strip all trailing whitespace on file save for file types
@@ -258,18 +246,6 @@ let g:ctrlp_custom_ignore = {
   \ }
 let g:ctrlp_cmd = 'CtrlPBuffer'
 let g:ctrlp_match_window = 'bottom,order:btt,min:1,max:10,results:0'
-
-" ----- heavenshell/vim-jsdoc ----- "
-let g:jsdoc_enable_es6 = 1
-let g:jsdoc_input_description = 1
-let g:jsdoc_allow_input_prompt = 1
-let g:jsdoc_param_description_separator = ' - '
-let g:jsdoc_tags = {} | let g:jsdoc_tags['returns'] = 'return'
-
-
-" ----- othree/javascript-libraries-syntax.vim ----- "
-let g:used_javascript_libs = 'underscore,chai'
-
 
 " ----- w0rp/ale ----- "
 nmap <silent> <leader>k <Plug>(ale_previous_wrap)
