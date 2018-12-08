@@ -14,7 +14,6 @@ complete -c man which
 complete -cf sudo proxychains4
 
 # Change to 256-color for your terminal applications
-export TERM='xterm-256color'
 export VISUAL='vim'
 export HISTCONTROL=ignoredups
 
