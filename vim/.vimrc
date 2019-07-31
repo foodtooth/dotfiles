@@ -32,7 +32,7 @@ filetype plugin indent on    " required
 " => General
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Get the defaults that most users want.
-source $VIMRUNTIME/defaults.vim
+" source $VIMRUNTIME/defaults.vim
 
 set autoread
 
@@ -61,6 +61,8 @@ set foldmethod=indent foldcolumn=4
 set foldenable
 set foldlevelstart=5
 set foldnestmax=10
+
+set pastetoggle=<F2>
 
 " Map Y to act like D and C, rather than act as yy
 map Y y$
