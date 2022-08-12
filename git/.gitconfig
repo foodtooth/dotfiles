@@ -7,3 +7,5 @@
 	template = /home/mike/.gitmessage
 [core]
 	excludesfile = /home/mike/.gitignore_global
+[init]
+	defaultBranch = main
