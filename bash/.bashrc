@@ -16,3 +16,5 @@ complete -cf sudo proxychains4
 export VISUAL='vim'
 # Ignore dups in bash history
 export HISTCONTROL=ignoredups
+
+[ -f /opt/miniconda3/etc/profile.d/conda.sh ] && source /opt/miniconda3/etc/profile.d/conda.sh
